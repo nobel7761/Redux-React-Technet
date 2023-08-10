@@ -23,6 +23,7 @@ const cartSlice = createSlice({
 
       if (existing) {
         existing.quantity = existing.quantity! + 1;
+        //! reason behind using ! after existing.quantity is, I'm sure that this won't be undefined. which is called as non-null assertion
       } else {
         state.products.push({ ...action.payload, quantity: 1 });
       }
