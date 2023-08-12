@@ -23,12 +23,6 @@ export default function Cart() {
   const { products, total } = useAppSelector((state) => state.cart);
   const dispatch = useAppDispatch();
 
-  //! Dummy data
-
-  // const total = 0;
-
-  //! **
-
   return (
     <Sheet>
       <SheetTrigger>
